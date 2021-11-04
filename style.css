@@ -1,0 +1,95 @@
+:root {
+  --color-main: #5f5f79;
+  --color-main-darker: #494964;
+  --color-main-lighter: #6f6f89;
+}
+
+html {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  /* its good idea to add background to all over the class to make have good vision abouts whats going on */
+  background-color: wheat;
+  align-items: center;
+
+  /* why ? */
+  height: 10vh;
+
+  /* this is going to use repeated */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-container,
+.nav-links,
+.cart {
+  display: flex;
+}
+
+.logo-container {
+  background-color: lightblue;
+  flex: 1;
+}
+.logo {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+nav {
+  background-color: greenyellow;
+  flex: 2;
+}
+.nav-links {
+  list-style: none;
+  justify-content: space-around;
+}
+.nav-link {
+  color: var(--color-main);
+  text-decoration: none;
+}
+.cart {
+  background-color: tomato;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.persentation {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+
+  /* this is same like we did in the header */
+  width: 90%;
+  margin: 0 auto;
+}
+.cover img {
+  height: 60vh;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 500;
+  background: linear-gradient(
+    to right,
+    var(--color-main-darker),
+    var(--color-main-lighter)
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
