@@ -10,8 +10,11 @@
 
   --color-button: #c36cbb;
 
+  --color-secondary: #c36cbb;
+
   // borderadius
   --borderradius-button: 3px;
 }
-
+$color-main: var(--color-main);
 $color-button: var(--color-button);
+$color-main-lighter: var(--color-main-lighter);

@@ -6,7 +6,16 @@
   --color-main-lighter-2: #8f8fa1;
   --color-main-lighter-3: #9f9faf;
   --color-button: #c36cbb;
+  --color-secondary: #c36cbb;
   --borderradius-button: 3px; }
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .logo {
   display: flex;
@@ -33,7 +42,9 @@
   .hero__cover {
     flex: 1;
     display: flex;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    animation: drop 1s ease;
+    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.4)); }
     .hero__cover img {
       display: block;
       width: 80%; }
@@ -68,20 +79,33 @@
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  margin: 10px;
-  background: radial-gradient(circle at 30% 70%, #ffff00, #774400); }
+  background: radial-gradient(circle at 30% 80%, rgba(127, 127, 148, 0.6), rgba(159, 159, 175, 0)); }
   .circle--big {
     top: -35%;
     right: -10%;
     width: 80rem;
-    height: 80rem; }
+    height: 80rem;
+    opacity: 0.2; }
+  .circle--medium {
+    top: 25%;
+    right: 30%;
+    width: 50rem;
+    height: 50rem;
+    opacity: 0.15; }
+  .circle--small {
+    top: 45%;
+    right: 55%;
+    width: 44rem;
+    height: 44rem;
+    opacity: 0.08; }
 
 .header {
   max-width: 130rem;
   margin: 0 auto;
   height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .nav {
   padding: 2rem 0;
@@ -98,7 +122,7 @@
     color: var(--color-main);
     font-size: 1.6rem; }
   .nav__item:hover {
-    color: var(--color-main-darker-2); }
+    color: var(--color-secondary); }
 
 html {
   font-size: 62.5%;
@@ -110,7 +134,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  position: relative;
   font-family: "Poppins", sans-serif;
   color: var(--color-main); }
 

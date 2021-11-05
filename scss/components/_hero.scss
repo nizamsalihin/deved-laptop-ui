@@ -18,6 +18,8 @@
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    animation: drop 1s ease;
+    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.4));
     img {
       display: block;
       width: 80%;
