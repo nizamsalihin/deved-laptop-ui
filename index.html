@@ -7,49 +7,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Landing page</title>
   </head>
   <body>
-    <header>
-      <div class="logo-container">
-        <img src="img/logo.svg" alt="logo" />
-        <h4 class="logo">Three Dots</h4>
-      </div>
-      <nav>
-        <ul class="nav-links">
-          <li><a class="nav-link" href="#">specs</a></li>
-          <li><a class="nav-link" href="#">Products</a></li>
-          <li><a class="nav-link" href="#">Contacts</a></li>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <img src="img/logo.svg" alt="logo" class="logo__img" />
+          <h4 class="logo__text">Three Dots</h4>
+        </div>
+
+        <ul class="nav__list">
+          <li><a href="#" class="nav__item">Specs</a></li>
+          <li><a href="#" class="nav__item">products</a></li>
+          <li><a href="#" class="nav__item">Contacts</a></li>
         </ul>
       </nav>
-      <div class="cart">
-        <img src="img/cart.svg" alt="cart" />
-      </div>
-    </header>
-    <main>
-      <section class="persentation">
-        <div class="introduction">
-          <div class="intro-text">
-            <h1>laptop for the future</h1>
-            <p>
-              The new 14 inch bezeless display offering a 4k display with touch
-              screen
+      <div class="hero">
+        <div class="hero__tittle-box">
+          <div class="hero__tittle">
+            <h1 class="heading-primary">laptop for the future</h1>
+            <p class="hero__text">
+              The new 14 inch bezeless display offering a 4k display with
+              touchscreen
             </p>
           </div>
-          <div class="cta">
-            <button class="cta-select">14 Inch</button>
-            <button class="cta-add">Add to cart</button>
+          <div class="hero__cta-box">
+            <button class="cta cta--select">14 Inch</button>
+            <button class="cta cta--add">Add to cart</button>
           </div>
         </div>
-        <div class="cover">
+        <div class="hero__cover">
           <img src="img/matebook.png" alt="matebook" />
         </div>
-      </section>
+      </div>
+    </header>
+    <div class="circle circle--big"></div>
+    <main>
+      <!-- <img class="circle circle--big" src="img/big-eclipse.svg" alt="big" />
+      <img
+        class="circle circle--medium"
+        src="img/mid-eclipse.svg"
+        alt="medium"
+      />
+      <img
+        class="circle circle--small"
+        src="img/small-eclipse.svg"
+        alt="small"
+      /> -->
     </main>
   </body>
 </html>

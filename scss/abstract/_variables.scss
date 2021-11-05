@@ -1,0 +1,17 @@
+:root {
+  --color-main: #5f5f79;
+
+  --color-main-darker: #434355;
+  --color-main-darker-2: #262630;
+
+  --color-main-lighter: #7f7f94;
+  --color-main-lighter-2: #8f8fa1;
+  --color-main-lighter-3: #9f9faf;
+
+  --color-button: #c36cbb;
+
+  // borderadius
+  --borderradius-button: 3px;
+}
+
+$color-button: var(--color-button);

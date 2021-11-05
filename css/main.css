@@ -1,0 +1,124 @@
+:root {
+  --color-main: #5f5f79;
+  --color-main-darker: #434355;
+  --color-main-darker-2: #262630;
+  --color-main-lighter: #7f7f94;
+  --color-main-lighter-2: #8f8fa1;
+  --color-main-lighter-3: #9f9faf;
+  --color-button: #c36cbb;
+  --borderradius-button: 3px; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem; }
+  .logo__img {
+    display: block; }
+  .logo__text {
+    font-size: 1rem;
+    text-transform: uppercase; }
+
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center; }
+  .hero__tittle-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+  .hero__cta-box {
+    display: flex;
+    gap: 2rem; }
+  .hero__cover {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; }
+    .hero__cover img {
+      display: block;
+      width: 80%; }
+  .hero__text {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--color-main-lighter-3); }
+
+.cta, .cta:link, .cta:visited {
+  padding: 2rem 5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: var(--borderradius-button); }
+
+.cta--add,
+.cta--add :link,
+.cta--add :visited {
+  background-color: var(--color-button);
+  transition: all 0.2s;
+  color: white; }
+
+.cta--select, .cta--select:link, .cta--select:visited {
+  color: var(--color-button);
+  border: 2px solid currentColor; }
+
+.cta--add:hover {
+  filter: brightness(95%); }
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  margin: 10px;
+  background: radial-gradient(circle at 30% 70%, #ffff00, #774400); }
+  .circle--big {
+    top: -35%;
+    right: -10%;
+    width: 80rem;
+    height: 80rem; }
+
+.header {
+  max-width: 130rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between; }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    gap: 5rem; }
+  .nav__item:link, .nav__item:visited, .nav__item {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-size: 1.6rem; }
+  .nav__item:hover {
+    color: var(--color-main-darker-2); }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-main); }
+
+.heading-primary {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+  background: linear-gradient(to right, var(--color-main-darker), var(--color-main-lighter));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; }
